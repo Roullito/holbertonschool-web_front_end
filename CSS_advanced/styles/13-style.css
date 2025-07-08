@@ -36,20 +36,26 @@ body {
     line-height: var(--line-height-base);
 }
 
-a[href] {
-    text-decoration: none;
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-a[href]:visited {
-    font-style: italic;
+a:link, a:visited {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-a[href]:hover {
-    text-decoration: underline;
+a:visited {
+  font-style: italic;
 }
 
-a[href]:active {
-    background-color: var(--color-light-grey);
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
