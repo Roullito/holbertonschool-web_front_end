@@ -528,19 +528,20 @@ a:active {
 }
 
 .button {
-    display: var(--button-display);
-    padding: var(--button-padding);
-    border: var(--button-border);
-    font-size: var(--button-font-size);
-    color: var(--button-color);
-    text-decoration: var(--button-text-decoration);
-    transition: color var(--transition-duration), background-color var(--transition-duration);
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
 }
 
 .button:hover {
-    color: var(--button-hover-color);
-    text-decoration: var(--button-hover-text-decoration);
-    background: var(--button-hover-background);
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
 }
 
 .visually-hidden {
@@ -602,9 +603,8 @@ a:active {
 }
 
 .card-work .card-outer {
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  position: relative;
+  overflow: hidden;
 }
 
 .card-work .card-image img {
@@ -643,13 +643,15 @@ a:active {
   display: block;
   text-decoration: none;
   padding-top: 45%;
-  position: relative;
 }
 
 .card-work .card-title a::after {
-  content: "";
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
 }
 
 .card-work:hover .card-title {
@@ -672,6 +674,7 @@ a:active {
 
 .card-work:hover .card-image {
   transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
