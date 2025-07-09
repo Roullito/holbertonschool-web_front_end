@@ -541,8 +541,6 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
-    transition-property: color, background-color;
-    transition-duration: var(--transition-duration);
 }
 
 .visually-hidden {
@@ -674,7 +672,6 @@ a:active {
 
 .card-work:hover .card-image {
   transform: scale(1.2);
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
