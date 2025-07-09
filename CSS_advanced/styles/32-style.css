@@ -616,6 +616,10 @@ a:active {
     vertical-align: bottom;
 }
 
+.card-work .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
 .card-work .card-inner {
     position: absolute;
     top: -0.1rem;
