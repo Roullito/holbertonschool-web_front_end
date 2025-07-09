@@ -414,7 +414,7 @@ body {
 .nav {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   text-align: center;
 }
 
@@ -559,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color);
 }
 
